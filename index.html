@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nuvora Labs – Apps, AI Agents & Workflow Automation</title>
+<meta name="description" content="Nuvora Labs builds custom applications, AI agents and automation that replace manual work.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0d1033">
+<meta property="og:title" content="Nuvora Labs – Apps, AI Agents & Workflow Automation">
+<meta property="og:description" content="Websites, apps, AI agents and automation built within your timeline, even in a week.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="loading">
+<div id="loader" aria-hidden="true"><img src="logo.svg" alt=""><span></span></div>
+<div id="progress"></div>
+<header class="nav" id="nav">
+  <a class="logo" href="#top"><img class="logo-img" src="logo.svg" alt="">Nuvora Labs</a>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#packages">Packages</a>
+    <a href="#work">Our work</a>
+    <a href="#process">Process</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQ</a>
+    <button class="btn btn-sm" type="button" data-callback>Request a call back</button>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <canvas id="scene" aria-hidden="true"></canvas>
+    <div class="hero-copy">
+      <a class="offer" href="#packages"><span class="spark"></span>Websites start at ₹699. Every price is negotiable.</a>
+      <h1>We build software that works while you sleep.</h1>
+      <p class="typed-line">We build <span id="typed"></span><i class="caret"></i></p>
+      <p>Websites, apps, AI agents and automation, built within the timeline you need. Many projects are ready in a week.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#packages">See packages</a>
+        <a class="btn btn-ghost" href="#work">View our work</a>
+      </div>
+    </div>
+    <div class="ticker" aria-label="What we build">
+      <div class="ticker-track">
+        <span>Web apps</span><span>Mobile apps</span><span>AI agents</span><span>Workflow automation</span><span>Dashboards</span><span>API integrations</span>
+        <span>Web apps</span><span>Mobile apps</span><span>AI agents</span><span>Workflow automation</span><span>Dashboards</span><span>API integrations</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust" aria-label="Why choose us"><div class="wrap trust-grid">
+    <div class="ti"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><path d="M7.5 7.5h.01"/></svg><div><strong>Fixed prices</strong><span>No surprise bills</span></div></div>
+    <div class="ti"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg><div><strong>Ready fast</strong><span>Many projects in a week</span></div></div>
+    <div class="ti"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M16 6l3 3"/></svg><div><strong>You own the code</strong><span>Yours once paid for</span></div></div>
+    <div class="ti"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg><div><strong>30 days of support</strong><span>After every launch</span></div></div>
+  </div></section>
+
+  <section class="section" id="services">
+    <div class="wrap">
+      <h2>Three ways we take work off your plate</h2>
+      <div class="services">
+        <article class="service s-app">
+          <h3>Applications</h3>
+          <p>Web and mobile apps designed around how your customers and staff actually work, from first prototype to production.</p>
+          <ul><li>Web platforms and portals</li><li>iOS and Android apps</li><li>Admin dashboards</li></ul>
+        <button class="chip more" data-svc="app">Learn more</button>
+        </article>
+        <article class="service s-ai">
+          <h3>AI agents</h3>
+          <p>Agents that read, decide and act: answering customers, qualifying leads, processing documents, and handing off to your team when needed.</p>
+          <ul><li>Customer support agents</li><li>Document and data extraction</li><li>Internal knowledge assistants</li></ul>
+        <button class="chip more" data-svc="ai">Learn more</button>
+        </article>
+        <article class="service s-auto">
+          <h3>Workflow automation</h3>
+          <p>We find the manual steps that eat your week and replace them with reliable, monitored automations.</p>
+          <ul><li>Invoicing and reporting</li><li>CRM and tool integrations</li><li>Approvals and notifications</li></ul>
+        <button class="chip more" data-svc="auto">Learn more</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section" id="demo">
+    <div class="wrap demo-grid">
+      <div>
+        <h2>See an AI agent and an automation at work</h2>
+        <p class="lead">Try a sample support agent, then watch how a manual task becomes an automatic one.</p>
+        <div class="flow" id="flow" aria-label="Automation example">
+          <div class="node">Invoice email arrives</div><div class="arrow"></div>
+          <div class="node">AI reads the details</div><div class="arrow"></div>
+          <div class="node">Entered in your accounts</div><div class="arrow"></div>
+          <div class="node done">Team notified</div>
+          <span class="pulse"></span>
+        </div>
+      </div>
+      <div class="chat" id="chat">
+        <div class="chat-head"><span class="dot"></span>Sample support agent</div>
+        <div class="chat-log" id="chatLog" aria-live="polite"><div class="msg bot">Hi! Pick a question and I'll answer it.</div></div>
+        <div class="chat-opts" id="chatOpts"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="calculator">
+    <div class="wrap calc">
+      <div>
+        <h2>How much could automation save you?</h2>
+        <p class="lead">Move the sliders to see an estimate in rupees.</p>
+        <label class="rng">Hours of repeated manual work per week <output id="oH">20</output><input type="range" id="cH" min="2" max="80" value="20"></label>
+        <label class="rng">Cost of one working hour (₹) <output id="oR">300</output><input type="range" id="cR" min="100" max="2000" step="50" value="300"></label>
+        <label class="rng">Share of that work we can automate <output id="oP">60%</output><input type="range" id="cP" min="20" max="90" step="5" value="60"></label>
+      </div>
+      <div class="calc-out">
+        <p>You could save about</p>
+        <strong id="saveM">₹0</strong>
+        <span>every month</span>
+        <p class="calc-sub" id="saveY"></p>
+        <p class="calc-sub" id="payback"></p>
+        <button class="btn" type="button" data-callback>Get my free plan</button>
+        <p class="calc-note">This is an estimate. Real savings depend on your process.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="packages">
+    <div class="wrap">
+      <h2>Simple packages with clear prices in rupees</h2>
+      <p class="lead">Fixed scope, fixed price. Delivery is usually 1 to 2 weeks, or as your project needs. Not sure which fits? Tell us the problem and we'll recommend one.</p>
+      <div class="helper" id="helper">
+        <p class="helper-q">Which package fits me? What do you need?</p>
+        <div class="helper-opts">
+          <button class="chip" type="button" data-h="0">A simple online page</button>
+          <button class="chip" type="button" data-h="1">A business website or one automation</button>
+          <button class="chip" type="button" data-h="2">A custom app with AI and a dashboard</button>
+          <button class="chip" type="button" data-h="3">Ongoing development</button>
+        </div>
+        <p class="helper-res" id="helperRes" role="status"></p>
+      </div>
+      <div class="packages">
+        <article class="pack">
+          <h3>Pehla Kadam</h3>
+          <p class="price">From ₹699</p>
+          <p>Your first step online: a one-page digital visiting card.</p>
+          <ul><li>One mobile-friendly page</li><li>Call, WhatsApp and map buttons</li><li>Your logo, photos and offers</li><li>Ready in 1 to 2 days</li><li>30 days of support</li></ul>
+          <a class="btn btn-ghost" href="#contact">Choose Pehla Kadam</a>
+        </article>
+        <article class="pack">
+          <h3>Aarambh</h3>
+          <p class="price">₹14,999</p>
+          <p>A fast start: a business website, one automation or one AI agent.</p>
+          <ul><li>Up to 5-page responsive website, or 1 automation or AI agent</li><li>Up to 2 tool integrations</li><li>Delivery in 3 to 7 days</li><li>30 days of support</li></ul>
+          <a class="btn btn-ghost" href="#contact">Choose Aarambh</a>
+        </article>
+        <article class="pack featured">
+          <span class="badge">Most popular</span>
+          <h3>Vistar</h3>
+          <p class="price">₹49,999</p>
+          <p>A complete custom web or mobile app with the automation around it.</p>
+          <ul><li>Custom web or mobile application</li><li>AI features included</li><li>Admin dashboard</li><li>Delivery in 1 to 2 weeks, or as per your needs</li><li>30 days of support</li></ul>
+          <a class="btn" href="#contact">Choose Vistar</a>
+        </article>
+        <article class="pack">
+          <h3>Shikhar</h3>
+          <p class="price">From ₹25,000 per month</p>
+          <p>An ongoing developer on your side for bigger or growing products.</p>
+          <ul><li>Dedicated development time every month</li><li>Priority changes and new features</li><li>Monitoring and upkeep</li><li>30 days of support after every release</li></ul>
+          <a class="btn btn-ghost" href="#contact">Talk to us</a>
+        </article>
+      </div>
+
+      <div class="deal">
+        <h3>Every price is negotiable.</h3>
+        <p>Tell us your budget and your deadline. Just call us, and we'll shape a plan that fits you.</p>
+        <div class="reach">
+          <a class="btn" href="tel:+918421532011">Call +91 84215 32011</a>
+          <a class="btn btn-ghost" href="https://wa.me/918421532011" target="_blank" rel="noopener">WhatsApp us</a>
+        </div>
+      </div>
+
+      <div class="table-wrap"><table class="compare">
+        <thead><tr><th></th><th>Pehla Kadam</th><th>Aarambh</th><th>Vistar</th><th>Shikhar</th></tr></thead>
+        <tbody>
+          <tr><th>Price</th><td>From ₹699</td><td>₹14,999</td><td>₹49,999</td><td>From ₹25,000 per month</td></tr>
+          <tr><th>Website</th><td>1 page</td><td>Up to 5 pages</td><td>Yes</td><td>Yes</td></tr>
+          <tr><th>Custom application</th><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+          <tr><th>AI agent</th><td>No</td><td>1 (instead of website)</td><td>Included</td><td>As needed</td></tr>
+          <tr><th>Workflow automations</th><td>No</td><td>1 (instead of website)</td><td>Up to 5</td><td>As needed</td></tr>
+          <tr><th>Admin dashboard</th><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+          <tr><th>Delivery</th><td>1 to 2 days</td><td>3 to 7 days</td><td>1 to 2 weeks</td><td>Monthly cycles</td></tr>
+          <tr><th>Support</th><td>30 days</td><td>30 days</td><td>30 days</td><td>30 days after each release</td></tr>
+        </tbody></table></div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="wrap">
+      <h2>Recent work</h2>
+      <p class="lead">A selection of recent websites and apps we have built.</p>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects">
+        <button class="chip on" data-f="all">All</button><button class="chip" data-f="web">Websites</button><button class="chip" data-f="app">Apps</button><button class="chip" data-f="ai">AI &amp; Automation</button>
+      </div>
+      <div class="work" id="workGrid"></div>
+      <div class="work" id="workStatic" hidden>
+        
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <section class="section" id="about">
+    <div class="wrap about">
+      <div>
+        <h2>Built by a developer who answers your calls</h2>
+        <p class="lead">Nuvora Labs builds websites, applications, AI agents and automation. You work directly with the person building your product, so nothing gets lost in translation.</p>
+        <div class="stats">
+          <div><strong>3+ years</strong><span>of full-stack experience</span></div>
+          <div><strong>1 week</strong><span>delivery for many projects</span></div>
+          <div><strong>30 days</strong><span>of support after launch</span></div>
+        </div>
+      </div>
+      <div class="team one">
+        <div class="person"><div class="avatar">K</div><h3>Kunal Kulkarni</h3><p>Founder and full-stack developer</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="voices">
+    <div class="wrap">
+      <h2>Our specialties</h2>
+      <p class="lead">We fit your deadline, not the other way around.</p>
+      <div class="quotes">
+        <blockquote><h3>On your timeline</h3><p>We build websites and applications within the time you need. Whether it's a few days or a few months, we plan the work to meet your date.</p></blockquote>
+        <blockquote><h3>Reliable full-stack builds</h3><p>Fast front ends, dependable back ends and clean code, so what we launch keeps working as your business grows.</p></blockquote>
+        <blockquote><h3>Automation and AI</h3><p>We replace manual work with automations and AI agents that connect to the tools you already use.</p></blockquote>
+        <blockquote><h3>Websites that bring customers</h3><p>Fast, mobile-first sites for local and growing businesses, with call, WhatsApp and enquiry buttons built in.</p></blockquote>
+        <blockquote><h3>Dashboards and live tracking</h3><p>Clear dashboards for fleets, operations and reports, with live data, charts and alerts, like our cold-chain tracking project.</p></blockquote>
+        <blockquote><h3>Integrations</h3><p>We connect your product with WhatsApp, payment gateways, CRMs, spreadsheets and accounting tools.</p></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="process">
+    <div class="wrap">
+      <h2>From first call to launch in four steps</h2>
+      <ol class="steps">
+        <li><h3>Discover</h3><p>We learn your goals and map the work that slows you down.</p></li>
+        <li><h3>Design</h3><p>You see a clickable prototype and a fixed plan before we write code.</p></li>
+        <li><h3>Build</h3><p>We ship in short cycles so you can review progress every week.</p></li>
+        <li><h3>Launch and support</h3><p>We deploy, train your team and keep everything running.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap faq">
+      <h2>Questions we hear often</h2>
+      <details><summary>How long does a project take?</summary><p>Many websites and automations are ready in 3 to 7 days, and most apps in 1 to 2 weeks. Bigger projects follow the timeline you need, and we plan the work to meet it.</p></details>
+      <details><summary>Do I own the code?</summary><p>Yes. When the project is paid for, the code and all assets are yours.</p></details>
+      <details><summary>Can you connect to the tools we already use?</summary><p>Yes. We integrate with CRMs, accounting tools, email, WhatsApp, spreadsheets and custom APIs.</p></details>
+      <details><summary>What happens after launch?</summary><p>Every package includes 30 days of support. If you want ongoing changes, the Shikhar package covers monthly development.</p></details>
+    </div>
+  </section>
+
+  
+  <section class="section alt" id="insights">
+    <div class="wrap">
+      <h2>Insights</h2>
+      <p class="lead">Short reads on automation, AI and building software.</p>
+      <div class="work">
+        <a class="post" href="#contact"><span class="price">Automation</span><h3>5 tasks every business should automate first</h3><p>Invoicing, follow-up emails, report generation, lead entry and approvals: the repeat tasks that quietly use up your team's week.</p></a>
+        <a class="post" href="#contact"><span class="price">AI agents</span><h3>When an AI agent is better than a chatbot</h3><p>A chatbot answers questions. An agent also takes action, like updating a record or booking a slot, and hands over to a person when needed.</p></a>
+        <a class="post" href="#contact"><span class="price">Websites</span><h3>What your business website must have in 2026</h3><p>Fast loading on mobile, clear contact options like WhatsApp, and simple pages that tell visitors what you do within seconds.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta" id="contact">
+    <div class="wrap">
+      <h2>Tell us what's eating your time.</h2>
+      <p class="lead">Describe your project and we'll reply within one business day.</p>
+      <form class="form" id="form" novalidate>
+        <label>Your name<input name="name" required autocomplete="name"></label>
+        <label>Work email<input name="email" type="email" required autocomplete="email"></label>
+        <label>What do you want to build or automate?<textarea name="msg" rows="4" required></textarea></label>
+        <button class="btn" type="submit">Send project brief</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+      <div class="reach"><button class="btn" type="button" data-callback>Request a call back</button><a class="btn btn-ghost" href="tel:+918421532011">Call +91 84215 32011</a><a class="btn btn-ghost" href="https://wa.me/918421532011" target="_blank" rel="noopener">WhatsApp us</a></div>
+      <p class="lead mailline">Prefer email? Write to <a href="mailto:kulkarnik809@gmail.com"><u>kulkarnik809@gmail.com</u></a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap foot-grid">
+  <div><span class="logo"><img class="logo-img" src="logo.svg" alt="">Nuvora Labs</span><p>Websites, apps, AI agents and automation, built on your timeline. Made in India.</p></div>
+  <div><h4>Explore</h4><a href="#services">Services</a><a href="#packages">Packages</a><a href="#work">Our work</a><a href="#faq">FAQ</a></div>
+  <div><h4>Contact</h4><a href="tel:+918421532011">+91 84215 32011</a><a href="mailto:kulkarnik809@gmail.com">kulkarnik809@gmail.com</a><a href="https://wa.me/918421532011" target="_blank" rel="noopener">WhatsApp</a></div>
+</div><div class="wrap foot-bar"><span>© 2026 Nuvora Labs. All rights reserved.</span><span>Founder: Kunal Kulkarni</span></div></footer>
+
+<button class="fab" type="button" data-callback aria-label="Request a call back">Call back</button>
+<a class="fab wa" href="https://wa.me/918421532011" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+<button class="totop" id="totop" type="button" aria-label="Back to top">↑</button>
+<div class="modal" id="cb" hidden><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="cbTitle"><button class="modal-x" id="cbClose" aria-label="Close">×</button>
+  <h3 id="cbTitle">Request a call back</h3><p>Leave your number and we'll call you.</p>
+  <form class="form" id="cbForm" novalidate>
+    <label>Your name<input name="name" required autocomplete="name"></label>
+    <label>Phone number<input name="phone" type="tel" required autocomplete="tel" placeholder="+91"></label>
+    <label>Best time to call (optional)<input name="preferred_time" placeholder="For example, after 5 pm"></label>
+    <button class="btn" type="submit">Call me back</button>
+    <p class="form-note" id="cbNote" role="status"></p>
+  </form></div></div>
+<div class="modal" id="modal" hidden><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mTitle"><button class="modal-x" id="mClose" aria-label="Close">×</button><div class="device" id="mDevice"><div class="screen"></div></div><h3 id="mTitle"></h3><p id="mType" class="price"></p><p id="mBody"></p><a class="btn btn-sm" id="mLink" target="_blank" rel="noopener" hidden>Visit project</a></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
